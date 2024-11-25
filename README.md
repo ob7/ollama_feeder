@@ -54,7 +54,7 @@ Example Usage:
 or
 ./setup_project.sh and follow prompts
 
-z Interact with the codebase
+# Interact with the codebase
 python interact_with_codebase.py projects/my_project
 this is triggered automatically when first doing project setup
 
