@@ -56,12 +56,17 @@ or
 
 # Interact with the codebase
 python interact_with_codebase.py projects/my_project
+
 this is triggered automatically when first doing project setup
 
 Sample Interaction:
+
 Interactive Codebase Session. Type 'exit' to quit.
+
 Using prompt: You are an assistant knowledgeable about the given codebase. Answer questions and provide insights.
 
 Your question: What does the main.py file do?
+
 Ollama Response:
+
 The main.py file is responsible for initializing the application, handling CLI arguments, and invoking core functions from the utils module.
