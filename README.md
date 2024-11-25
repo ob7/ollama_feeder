@@ -2,6 +2,8 @@ Ollama Feeder
 
 Ollama Feeder is a Python-based project designed to enable Retrieval-Augmented Generation (RAG) with a local LLM (Large Language Model) using Ollama. This tool allows users to interact with a codebase by asking natural language questions, retrieving relevant information from the codebase, and integrating the responses with an LLM for intelligent contextual answers.
 
+Note that this is my first try go at implementing RAG with Ollama and currently is not the best.  It works but needs alot of improvment.
+
 Features:
 - Codebase Indexing: Automatically indexes a codebase directory using FAISS and stores metadata for efficient searching.
 - Contextual Q&A: Retrieves relevant code snippets and integrates them into the LLM query for context-aware responses.
@@ -39,19 +41,22 @@ How It Works:
 
 Dependencies:
 Dependencies are defined in the shell.nix file, which includes:
-- Python 3.8+
+- Python
 - Sentence Transformers (sentence-transformers)
-- FAISS (faiss-cpu)
-- Ollama (ollama.ai)
+- FAISS
+- Ollama
 
 Activate the development environment using nix-shell, and all dependencies will be automatically available.
 
 Example Usage:
 # Initialize a project
 ./setup_project.sh my_project /path/to/codebase
+or
+./setup_project.sh and follow prompts
 
-# Interact with the codebase
+z Interact with the codebase
 python interact_with_codebase.py projects/my_project
+this is triggered automatically when first doing project setup
 
 Sample Interaction:
 Interactive Codebase Session. Type 'exit' to quit.
